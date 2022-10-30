@@ -1,9 +1,13 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './components/Homepage/Homepage'
 
 const App = () => {
   return (
     <div>
-      <h1>Crypto Cafe Starter Template</h1>
+      <Routes>
+        <Route path='/' element={<HomePage/>}></Route>
+      </Routes>
     </div>
   )
 }
